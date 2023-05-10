@@ -247,9 +247,9 @@ data_rex[2]=48;
 	  {
 			HAL_GPIO_WritePin(GPIOD,GPIO_PIN_8,GPIO_PIN_SET);//步进电机的方向引脚
 			HAL_GPIO_WritePin(GPIOD,GPIO_PIN_9,GPIO_PIN_RESET);
-            cw9();
+                        cw9();
 			cw10();//同上，对引脚做出规定，方便移植
-		    HAL_Delay(2);
+		        HAL_Delay(2);
 			engine_end();
 	  }
 ```
